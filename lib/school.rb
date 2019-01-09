@@ -13,16 +13,16 @@ class School
     # roster[grade] ||= []
     # roster[grade] << name
     
-    roster[grade] = [] if roster[grade] == nil
-    roster[grade] << name
+    @roster[grade] = [] if @roster[grade] == nil
+    @roster[grade] << name
   end
 
   def grade(grade_num)
-    roster[grade_num]
+    @roster[grade_num]
   end
 
   def sort 
-    roster.each do |grade, name_arr|
+    @roster.each do |grade, name_arr|
       name_arr.sort!
     end
   end
