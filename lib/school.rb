@@ -5,8 +5,7 @@ class School
     @roster = {}
   end
 
-  attr_accessor :name
-  attr_accessor :roster
+  attr_accessor :name, :roster
 
   def add_student(student, grade)
     roster[grade].nil? ? @roster[grade] = [student] : @roster[grade] << student
